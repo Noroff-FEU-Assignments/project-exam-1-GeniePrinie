@@ -1,0 +1,19 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  padding: 20px 40px;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #262626;
+}
+
+h1 {
+  font-family: "baskerville", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
