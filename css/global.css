@@ -1,9 +1,11 @@
 * {
   box-sizing: content-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
   font-family: "Karla", sans-serif;
   letter-spacing: 1px;
   font-style: normal;
@@ -12,8 +14,36 @@ body {
   color: #262626;
 }
 
-h1 {
+header,
+main,
+footer nav {
+  padding: 20px 40px;
+}
+
+h1,
+h2,
+h3 {
   font-family: "baskerville", sans-serif;
   font-style: normal;
   font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  padding: 7px 0;
+  background-color: #ffffff;
+  margin: 0;
+  box-sizing: none;
 }

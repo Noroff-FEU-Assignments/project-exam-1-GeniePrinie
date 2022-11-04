@@ -1,0 +1,46 @@
+.logo {
+  font-family: "baskerville", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.top-nav {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 15px;
+  text-align: right;
+}
+
+.bottom-nav {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 15px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+footer nav {
+  background-color: #d5ccc0;
+}
+
+.phone-bottom-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.phone-bottom-nav a,
+.phone-bottom-nav div {
+  padding: 10px;
+}

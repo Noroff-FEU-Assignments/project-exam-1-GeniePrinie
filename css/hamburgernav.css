@@ -17,10 +17,12 @@ nav i {
   z-index: 4;
   top: 0;
   right: 0;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 40px;
   opacity: 0;
   cursor: pointer;
+  margin-right: 35px;
+  margin-top: 20px;
 }
 
 .container-hamburger-menu .hamburger {
@@ -34,7 +36,7 @@ nav i {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e5ddd3;
+  margin: 5px 25px;
 }
 
 /* making hamburger line */
@@ -144,9 +146,9 @@ nav i {
 }
 
 .container-hamburger-menu .menu > div > div > ul > li > a {
-  text-decoration: none;
   color: inherit;
   transition: color 0.3s ease;
+  font-size: 20px;
 }
 
 .container-hamburger-menu .menu > div > div > ul > li > a:hover,
