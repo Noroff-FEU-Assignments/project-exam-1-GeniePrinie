@@ -10,6 +10,7 @@
   .phone {
     display: none;
   }
+
   .desktop {
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +23,15 @@
   .desktop-bottom {
     justify-content: start;
   }
+
   .desktop-bottom .logo {
     width: 45%;
+  }
+
+  /* About */
+  .team-member p {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

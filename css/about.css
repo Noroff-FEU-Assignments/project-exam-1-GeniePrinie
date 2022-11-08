@@ -1,0 +1,61 @@
+main {
+  padding: 20px 0;
+}
+
+h1 {
+  padding: 20px 40px;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 15px 0 15px 0;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 15px 0 15px 0;
+}
+
+.about-banner {
+  background-color: #ebe3d7;
+  padding: 50px 40px 100px 40px;
+  margin-bottom: 70px;
+  box-sizing: content-box;
+}
+.about-banner img {
+  width: 100%;
+}
+
+.shrimp-icon {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.shrimp-icon i {
+  font-size: 70px;
+}
+
+.meet-team {
+  padding: 20px 40px;
+}
+
+.meet-team h2 {
+  text-align: center;
+}
+
+.team-member {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.team-member p {
+  text-align: left;
+}
+
+.team-member-img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}

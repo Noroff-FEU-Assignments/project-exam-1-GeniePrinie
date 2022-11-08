@@ -61,7 +61,7 @@ button {
 }
 
 button:hover {
-  background-color: #e5ddd3;
+  border-color: #e5ddd3;
 }
 
 #submited-message {

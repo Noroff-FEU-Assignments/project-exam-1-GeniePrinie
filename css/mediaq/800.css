@@ -1,0 +1,51 @@
+@media screen and (min-width: 800px) {
+  /* About */
+
+  .about-banner {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+  }
+  .about-banner img {
+    width: 50%;
+  }
+  .about-banner div {
+    width: 50%;
+    align-self: center;
+  }
+
+  .about-banner h2,
+  .about-banner p {
+    max-width: 700px;
+  }
+
+  .shrimp-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .meet-team {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-member {
+    display: flex;
+    gap: 5%;
+  }
+
+  .left {
+    justify-content: left;
+    flex-direction: row;
+  }
+
+  .right {
+    justify-content: right;
+    flex-direction: row-reverse;
+  }
+
+  .team-member h3 {
+    text-align: left;
+  }
+}
