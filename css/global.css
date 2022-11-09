@@ -11,6 +11,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   color: #262626;
+  -webkit-font-smoothing: antialiased;
 }
 
 header,
