@@ -49,4 +49,45 @@
   .team-member h3 {
     text-align: left;
   }
+
+  /* specific recipe */
+  .details-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .details-top-child div {
+    width: 50%;
+  }
+
+  .details-top-child img {
+    max-width: 500px;
+    display: -webkit-box;
+    margin-left: auto;
+  }
+
+  .details-top-child > div:last-child {
+    margin-left: 5%;
+  }
+
+  .details-top-child p {
+    max-width: 500px;
+  }
+
+  .details-bottom-child {
+    justify-content: left;
+  }
+
+  .details-bottom-child-instruction {
+    max-width: 500px;
+    margin-left: 5%;
+  }
+
+  @media screen and (min-width: 1135px) {
+    .details-bottom-child {
+      justify-content: center;
+      margin-left: -355px;
+    }
+  }
 }
