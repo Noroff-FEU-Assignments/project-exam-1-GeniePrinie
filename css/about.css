@@ -2,6 +2,10 @@ main {
   padding: 20px 0;
 }
 
+main p {
+  line-height: 2;
+}
+
 h1 {
   padding: 20px 40px;
 }
