@@ -3,4 +3,9 @@
   .about-banner h2 {
     font-size: 60px;
   }
+
+  /* specific recipe */
+  .details-bottom-child {
+    margin-top: 40px;
+  }
 }
