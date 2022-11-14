@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/navigation.css" />
     <link rel="stylesheet" href="/css/hamburgernav.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/home/homebanner.css" />
+    <link rel="stylesheet" href="/css/home/latestrecipes.css" />
     <link rel="stylesheet" href="/css/mediaq/600.css" />
   </head>
   <body>
@@ -61,14 +62,39 @@
     </header>
     <main>
       <section class="banner">
-        <h1>Welcome to Living Organically Recipe blog.</h1>
-        <p>We update our new recipes every Thursdays and Sundays.</p>
-        <p>
-          We hope you enjoy our recipes as much as we enjoy creating them
-          <i class="fa-solid fa-heart"></i>.
-        </p>
+        <div class="banner-text">
+          <h1>Welcome to Living Organically Recipe blog.</h1>
+          <p>We update our new recipes every Thursdays and Sundays.</p>
+          <p>
+            We hope you enjoy our recipes as much as we enjoy creating them
+            <i class="fa-solid fa-heart"></i>.
+          </p>
+        </div>
       </section>
-      <section class="new-recipes"></section>
+
+      <section class="latest-recipes">
+        <h2>New Recipes.</h2>
+
+        <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+        <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+
+        <div class="latest_recipes slides-container" id="slides-container">
+          <article class="recipe slide">
+            <a href="/html/specificrecipe.html">
+              <img src="/images/food/item10.jpg" alt="French Toast" />
+              <div class="recipe-content">
+                <h3>French Toast</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis consectetur ipsum tempora deserunt eligendi modi
+                  nihil neque minus ad iure optio totam ea perferendis, debitis,
+                  enim odio ullam unde! Nobis.
+                </p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>
       <nav>
@@ -113,5 +139,8 @@
         </p>
       </section>
     </footer>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/global/api.js"></script>
+    <script src="/js/latestrecipes.js"></script>
   </body>
 </html>
