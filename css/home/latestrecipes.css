@@ -1,4 +1,3 @@
-/* mock up recipes */
 .latest-recipes {
   padding: 20px 40px;
   position: relative;
@@ -17,7 +16,8 @@
   bottom: 0;
   margin: auto;
   height: 65px;
-  background-color: #764646;
+  background-color: #d5ccc0;
+  color: #fff;
   border: none;
   width: 30px;
   font-size: 50px;

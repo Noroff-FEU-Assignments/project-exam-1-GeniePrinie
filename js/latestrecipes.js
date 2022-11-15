@@ -1,5 +1,5 @@
-const recipeArticle = document.querySelector(".latest_recipes");
-recipeArticle.innerHTML = "";
+const recipeArticleContainer = document.querySelector(".latest_recipes");
+recipeArticleContainer.innerHTML = "";
 
 try {
   fetchLatestRecipes().then((recipes) => {
@@ -13,11 +13,11 @@ try {
     }
   });
 } catch (error) {
-  recipeArticle.innerHTML = `<div>${error}</div>`;
+  recipeArticleContainer.innerHTML = `<div>${error}</div>`;
 }
 
 function createRecipeItem(link, name, image, description) {
-  recipeArticle.innerHTML += `<article class="recipe slide">
+  recipeArticleContainer.innerHTML += `<article class="recipe slide">
                                 <a href="${link}">
                                 <img src="${image}" alt="${name}" />
                                 <div class="recipe-content">
