@@ -48,10 +48,15 @@ function createSpecificRecipe(
   image
 ) {
   pageTitle.innerHTML = `LO. | ${name}`;
-  recipeContainer.innerHTML += `<div class="details-child details-top-child">
-                                  <div>
-                                      <img src="${image}" alt="${name}" />
-                                  </div>  
+  recipeContainer.innerHTML += `<div class="details-child details-top-child subcontainer">
+                              
+                                  <div class="image-container">
+                                    <img src="${image}" alt="${name}" class="targetImage"/>
+                                  </div>
+
+                                  <div class="pop-up-background">
+                                    <img class="pop-up-image" src="${image}" alt="${name}">
+                                  </div>
 
                                   <div>
                                     <h3>${category}</h3>
@@ -60,6 +65,7 @@ function createSpecificRecipe(
                                     ${description}
                                     </p>
                                   </div>
+
                                 </div>
 
                                 <div class="details-child details-bottom-child">
@@ -71,4 +77,27 @@ function createSpecificRecipe(
                                     ${instruction}
                                   </div>
                                 </div>`;
+
+  const rootImage = document.querySelector(".targetImage");
+  const modalBackground = document.querySelector(".pop-up-background");
+  const modalImage = document.querySelector(".pop-up-image");
+
+  rootImage.addEventListener("click", displayModal);
+  modalBackground.addEventListener("click", closeModal);
+  modalImage.addEventListener("click", keepModal);
+}
+
+function displayModal() {
+  document.querySelector(".pop-up-background").style.display = "block";
+}
+
+function closeModal() {
+  document.querySelector(".pop-up-background").style.display = "none";
+}
+
+function keepModal(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  e.stopImmediatePropagation();
+  return false;
 }
