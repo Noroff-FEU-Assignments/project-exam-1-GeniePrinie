@@ -42,7 +42,7 @@ main {
 }
 
 .targetImage {
-  cursor: pointer;
+  cursor: zoom-in;
   transition: 0.3s;
 }
 
@@ -58,6 +58,7 @@ main {
   height: 100%;
   width: 100%;
   z-index: 100;
+  cursor: pointer;
   display: none;
 }
 
@@ -68,6 +69,7 @@ main {
   transform: translate(-50%, -50%);
   width: 750px;
   object-fit: cover;
+  cursor: default;
 }
 
 @media (max-width: 799px) {
