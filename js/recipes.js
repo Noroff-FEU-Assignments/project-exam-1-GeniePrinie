@@ -29,3 +29,20 @@ function createRecipeItem(link, name, image, description) {
   </a>
 </article>`;
 }
+
+let loadMoreButton = document.querySelector(".load_more");
+let currentItem = 10;
+loadMoreButton.addEventListener("click", loadMoreBlogs);
+
+function loadMoreBlogs() {
+  let blog = document.getElementsByClassName("recipe");
+  for (let i = currentItem; i < currentItem + 10; i++) {
+    if (i >= blog.length) break;
+    blog[i].style.display = "inline-block";
+  }
+  currentItem += 10;
+
+  if (currentItem >= blog.length) {
+    loadMoreButton.style.display = "none";
+  }
+}
