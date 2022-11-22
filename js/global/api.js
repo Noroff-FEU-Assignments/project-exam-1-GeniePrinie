@@ -3,6 +3,7 @@ async function fetchAllRecipes() {
     "https://genieprinyanut.com/Noroff/living-organically-api/wp-json/wp/v2/posts?per_page=100";
   const response = await fetch(url);
   const recipes = await response.json();
+
   return recipes;
 }
 

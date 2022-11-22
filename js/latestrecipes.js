@@ -8,7 +8,10 @@ try {
       let link = "/html/specificrecipe.html?id=" + id;
       let name = recipes[i].title.rendered;
       let image = recipes[i].better_featured_image.source_url;
-      let description = recipes[i].content.rendered;
+      const content = recipes[i].content.rendered;
+
+      const description = content.substring(0, content.lastIndexOf("<figure"));
+
       createRecipeItem(link, name, image, description);
     }
   });
