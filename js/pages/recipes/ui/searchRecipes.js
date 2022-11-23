@@ -1,4 +1,4 @@
-import { renderRecipes } from "/js/pages/recipes/renderRecipes.js";
+import { renderRecipes } from "/js/pages/recipes/ui/renderRecipes.js";
 
 export function searchRecipes(recipes) {
   const userSearch = document.querySelector(".search");

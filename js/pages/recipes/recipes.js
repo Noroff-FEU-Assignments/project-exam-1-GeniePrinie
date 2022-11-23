@@ -1,5 +1,5 @@
-import { renderRecipes } from "/js/pages/recipes/renderRecipes.js";
-import { searchRecipes } from "/js/pages/recipes/searchRecipes.js";
+import { renderRecipes } from "/js/pages/recipes/ui/renderRecipes.js";
+import { searchRecipes } from "/js/pages/recipes/ui/searchRecipes.js";
 
 try {
   fetchAllRecipes().then((recipes) => {
