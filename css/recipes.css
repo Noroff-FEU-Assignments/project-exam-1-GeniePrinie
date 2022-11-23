@@ -84,6 +84,7 @@
 }
 
 .recipe-content {
+  height: 113px;
   padding-top: 20px;
   text-overflow: ellipsis;
   overflow: hidden;
