@@ -2,6 +2,16 @@ main {
   line-height: 2;
 }
 
+.breadcrumbs {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  text-transform: none;
+  font-size: smaller;
+}
+
 .details img {
   width: 100%;
 }
