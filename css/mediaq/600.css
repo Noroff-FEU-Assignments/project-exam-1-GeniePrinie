@@ -3,6 +3,11 @@
   .desktop {
     display: none;
   }
+
+  /* home */
+  .banner-text h1 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 600px) {
