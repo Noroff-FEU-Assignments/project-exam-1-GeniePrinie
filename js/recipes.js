@@ -29,8 +29,8 @@ try {
       let name = recipe.title.rendered;
       let image = recipe.better_featured_image.source_url;
       const content = recipe.content.rendered;
-
-      const description = content.substring(0, content.lastIndexOf("<figure"));
+      const description = content.substring(0, content.indexOf("<p><i"));
+      console.log(description);
 
       createRecipeItem(link, name, image, description);
     });

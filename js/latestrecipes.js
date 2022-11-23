@@ -9,8 +9,7 @@ try {
       let name = recipes[i].title.rendered;
       let image = recipes[i].better_featured_image.source_url;
       const content = recipes[i].content.rendered;
-
-      const description = content.substring(0, content.lastIndexOf("<figure"));
+      const description = content.substring(0, content.indexOf("<p><i"));
 
       createRecipeItem(link, name, image, description);
     }
