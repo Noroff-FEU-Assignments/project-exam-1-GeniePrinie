@@ -66,10 +66,6 @@
   font-size: 25px;
 }
 
-.recipe p {
-  margin-top: 12px;
-}
-
 .recipe-content {
   padding-top: 10px;
   text-overflow: ellipsis;
