@@ -1,61 +1,61 @@
-const recipesContainer = document.querySelector(".recipes");
-const search = document.querySelector(".our-recipes .search");
+const userSearch = document.querySelector(".search");
 let loadMoreButton = document.querySelector(".load_more");
-recipesContainer.innerHTML = "";
-
-// const searchValue = event.target.value.trim().toLowerCase();
-// search.onkeyup = function (event) {
 
 try {
   fetchAllRecipes().then((recipes) => {
-    // get search from user
-    const searchValue = "egg";
-    // filter recipes
-    const filteredRecipes = recipes.filter((recipes) => {
-      const name = recipes.title.rendered;
-      if (name.toLowerCase().includes(searchValue)) {
+    renderRecipe(recipes);
+    searchRecipe(recipes);
+  });
+} catch (error) {
+  document.querySelector(".recipes").innerHTML = `<div>${error}</div>`;
+}
+
+function renderRecipe(recipes) {
+  const recipesContainer = document.querySelector(".recipes");
+  recipesContainer.innerHTML = "";
+
+  recipes.forEach((recipe) => {
+    let id = recipe.id;
+    let link = "/html/specificrecipe.html?id=" + id;
+    let name = recipe.title.rendered;
+    let image = recipe.better_featured_image.source_url;
+    let content = recipe.content.rendered;
+    let description = content.substring(0, content.indexOf("<p><i"));
+
+    recipesContainer.innerHTML += `<article class="recipe">
+    <a href="${link}">
+     <img src="${image}" alt="${name}" />
+      <div class="recipe-content">
+        <h2>${name}</h2>
+        <p>
+        ${description}
+        </p>
+      </div>
+    </a>
+  </article>`;
+  });
+}
+
+function searchRecipe(recipes) {
+  const userSearch = document.querySelector(".search");
+
+  userSearch.onkeyup = function (event) {
+    const searchValue = event.target.value.trim().toLowerCase();
+
+    const filteredRecipes = recipes.filter((recipe) => {
+      if (recipe.title.rendered.toLowerCase().includes(searchValue)) {
         return true;
       }
     });
 
-    if (filteredRecipes.length <= 10) {
-      loadMoreButton.style.display = "none";
-    }
-
-    // display recipes
-    filteredRecipes.forEach((recipe) => {
-      let id = recipe.id;
-      let link = "/html/specificrecipe.html?id=" + id;
-      let name = recipe.title.rendered;
-      let image = recipe.better_featured_image.source_url;
-      const content = recipe.content.rendered;
-      const description = content.substring(0, content.indexOf("<p><i"));
-      console.log(description);
-
-      createRecipeItem(link, name, image, description);
-    });
-  });
-} catch (error) {
-  recipesContainer.innerHTML = `<div>${error}</div>`;
-}
-
-function createRecipeItem(link, name, image, description) {
-  recipesContainer.innerHTML += `<article class="recipe">
-  <a href="${link}">
-   <img src="${image}" alt="${name}" />
-    <div class="recipe-content">
-      <h2>${name}</h2>
-      <p>
-      ${description}
-      </p>
-    </div>
-  </a>
-</article>`;
+    renderRecipe(filteredRecipes);
+  };
 }
 
 // load more button
 let currentItem = 10;
 loadMoreButton.addEventListener("click", loadMoreBlogs);
+
 function loadMoreBlogs() {
   let blog = document.getElementsByClassName("recipe");
   for (let i = currentItem; i < currentItem + 10; i++) {
