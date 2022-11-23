@@ -32,11 +32,13 @@ nav i {
   right: 0;
   width: 35px;
   height: 35px;
-  padding: 1rem;
+  padding: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 5px 25px;
+  background-color: rgba(255, 255, 255, 0.76);
+  border-radius: 50px;
 }
 
 /* making hamburger line */
