@@ -38,7 +38,6 @@ main {
 /* zoom image */
 .subcontainer {
   position: relative;
-  min-height: 100vh;
 }
 
 .targetImage {
