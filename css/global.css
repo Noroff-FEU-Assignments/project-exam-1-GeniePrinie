@@ -37,6 +37,17 @@ a {
   font-weight: normal;
 }
 
+.breadcrumbs {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.breadcrumbs a {
+  text-transform: none;
+  font-size: smaller;
+}
+
 .copyright {
   text-align: center;
 }

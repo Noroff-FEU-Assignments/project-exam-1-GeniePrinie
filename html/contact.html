@@ -31,61 +31,66 @@
   <body>
     <header class="header"></header>
     <main class="container">
-      <h1>Contact us.</h1>
+      <section>
+        <h1>Contact us.</h1>
+        <p class="breadcrumbs"><a href="/index.html">Home | </a>Contact</p>
+      </section>
 
-      <div class="submited-message">
-        <p id=""></p>
-      </div>
-
-      <form id="contactForm">
-        <div>
-          <label>
-            Name (required)
-            <input name="name" id="name" />
-          </label>
-
-          <div class="formError" id="nameError">
-            <p></p>
-          </div>
+      <section class="contact-form-container">
+        <div class="submited-message">
+          <p id=""></p>
         </div>
 
-        <div>
-          <label>
-            Email (required)
-            <input name="email" id="email" />
-          </label>
-          <div class="formError" id="emailError">
-            <p></p>
-          </div>
-        </div>
+        <form id="contactForm">
+          <div>
+            <label>
+              Name (required)
+              <input name="name" id="name" />
+            </label>
 
-        <div>
-          <label>
-            Subject (minimum 15 characters)
-            <input name="text" id="subject" />
-            <div class="formError" id="subjectError">
+            <div class="formError" id="nameError">
               <p></p>
             </div>
-          </label>
-        </div>
+          </div>
 
-        <div>
-          <label>
-            Message (minimum 25 characters)
-            <textarea
-              name="textMessage"
-              id="textMessage"
-              cols="40"
-              rows="10"
-            ></textarea>
-            <div class="formError" id="textMessageError">
+          <div>
+            <label>
+              Email (required)
+              <input name="email" id="email" />
+            </label>
+            <div class="formError" id="emailError">
               <p></p>
             </div>
-          </label>
-        </div>
+          </div>
 
-        <button>Send</button>
-      </form>
+          <div>
+            <label>
+              Subject (minimum 15 characters)
+              <input name="text" id="subject" />
+              <div class="formError" id="subjectError">
+                <p></p>
+              </div>
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Message (minimum 25 characters)
+              <textarea
+                name="textMessage"
+                id="textMessage"
+                cols="40"
+                rows="10"
+              ></textarea>
+              <div class="formError" id="textMessageError">
+                <p></p>
+              </div>
+            </label>
+          </div>
+
+          <button>Send</button>
+        </form>
+      </section>
     </main>
     <footer class="footer"></footer>
     <script src="/js/navs/header.js"></script>

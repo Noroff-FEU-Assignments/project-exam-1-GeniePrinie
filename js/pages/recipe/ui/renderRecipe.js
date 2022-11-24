@@ -19,7 +19,7 @@ export function renderRecipe(recipe) {
   const category = recipe._embedded["wp:term"][0][0].name;
 
   pageTitle.innerHTML = `LO. | ${name}`;
-  breadCrumbsContainer.innerHTML = `<a href="/html/recipes.html">Recipes | </a> ${name}`;
+  breadCrumbsContainer.innerHTML = `<a href="/index.html">Home | </a><a href="/html/recipes.html">Recipes | </a> ${name}`;
   recipeContainer.innerHTML += `
     <div class="details-child details-top-child subcontainer">
         <div class="image-container">
