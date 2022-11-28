@@ -19,7 +19,7 @@ async function fetchSingleRecipe(id) {
 
 async function fetchLatestRecipes() {
   const url =
-    "https://genieprinyanut.com/Noroff/living-organically-api/wp-json/wp/v2/posts?per_page=16";
+    "https://genieprinyanut.com/Noroff/living-organically-api/wp-json/wp/v2/posts/";
   const response = await fetch(url);
   const latestRecipes = await response.json();
   return latestRecipes;
