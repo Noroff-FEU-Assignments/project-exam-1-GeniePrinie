@@ -1,67 +1,61 @@
-## Project Exam 1
+# Project Exam 1 by Prinyapon Prinyanut
 
-## Goal
+![img3](https://user-images.githubusercontent.com/100139381/206424407-d7ed0fac-d297-4966-9026-bffcc9fc2973.jpg)
 
-To put into practice the skills learned over your first year of studies.
+This is a Home page of Living Organically website (LO), a recipe blog website.
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+## Description
 
-### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+This project was to create an blog type website. I chose recipes to be my blog posts. The purpose of this project was to make the website easy to use and use the REST API from WordPress. The site was built using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch the data. The Hamburger Bar menu navigation is used for the phone-view.
 
-### Blog Page
+### This project has two aspects:
+-	My website built with HTML, CSS and JavaScript
+-	API from my WordPress installation
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+### The pages are:
 
-### Blog Specific Page
+1.	Home page
+2.	About page
+3.	List of blog posts (recipes)
+4.	Blog post specific pages (individual recipe when clicked from the recipes page)
+5.	Contact page.
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+#### Home Page
+The home page have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. The user can also click back to view results they had previously seen.
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+#### Blog Page
 
-### Contact page
+The blog posts page shows the first 10 blogs, and the user can click to view more results which then show underneath the first 10 blogs. This page gets the data from the WordPress REST API. The search bar is at the top of the page. It is fully functional and allows users to find the blog post (recipe) that exists in the API data more easily.
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+#### Blog Specific Page (recipes)
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+The content of the blog specific page is dynamically built by using a query string parameter based on whatever link the user clicked. The title of the blog specific page will change based on the blog that has been clicked on e.g. “LO. | Recipe name”.
 
-### WordPress
+When the image on this page is clicked, a modal will appear giving the user a bigger view of that image and when clicking outside the image, it will hide the modal.
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
+#### Contact page
 
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
+There are be 4 textboxes on this page.
+-	Name (When submit , the name has to be more than 5 characters long)
+-	Email address (When submit , the email must be a valid email address)
+-	Subject (When submit , the subject has to be more than 15 characters long)
+-	Message content (When submit , the message has to be more than 25 characters long)
 
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
+JavaScript was used for validation. It will show an error message if the values in the textboxes do not meet the requirements.
 
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
+## WordPress
 
-## Level 1 Process
+The WordPress was installed on my web host a add the blogs on the admin panel. The content for the website are stored on a WordPress installation used as a Headless CMS. WordPress is only used to provide an API and add content for the blog. 
 
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
+The JavaScript code makes a call to the WordPress REST API to fetch the data (recipes).
 
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
+## Hotjar
+
+Hotjar was installed on the website. I asked users to test my website, and adjust based on their feedback and any insights from Hotjar.
+
+## Contact
+
+[My Linkedin page](https://www.linkedin.com/in/genie-prinyanut-ab3441257/)
+
+[My Website](https://genieprinyanut.netlify.app/)
 
