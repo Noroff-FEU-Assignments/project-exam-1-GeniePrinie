@@ -2,14 +2,14 @@
 
 ![img3](https://user-images.githubusercontent.com/100139381/206424407-d7ed0fac-d297-4966-9026-bffcc9fc2973.jpg)
 
-This is a Home page of Living Organically website (LO), a recipe blog website.
+This is the home page of Living Organically website (LO), a recipe blog website.
 
 ## Description
 
-This project was to create an blog type website. I chose recipes to be my blog posts. The purpose of this project was to make the website easy to use and use the REST API from WordPress. The site was built using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch the data. The Hamburger Bar menu navigation is used for the phone-view.
+This website is based on a school project. The project was to create an blog type website. I chose recipes to be my blog posts. The purpose of this project was to make the website easy to use, and to use the REST API from WordPress. The site was built using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch the data. The hamburger bar menu navigation is used for the phone-view.
 
 ### This project has two aspects:
--	My website built with HTML, CSS and JavaScript
+-	Website built with HTML, CSS and JavaScript
 -	API from my WordPress installation
 
 ### The pages are:
@@ -25,7 +25,7 @@ The home page have a ‘Latest Posts’ section which uses a carousel (slider) f
 
 #### Blog Page
 
-The blog posts page shows the first 10 blogs, and the user can click to view more results which then show underneath the first 10 blogs. This page gets the data from the WordPress REST API. The search bar is at the top of the page. It is fully functional and allows users to find the blog post (recipe) that exists in the API data more easily.
+The blog posts page shows the first 10 blogs, and the user can click to view more results which is then shown underneath the first 10 blogs. This page gets the data from the WordPress REST API. The search bar is at the top of the page. It is fully functional and allows users to find the blog post (recipe) that exists in the date from the API.
 
 #### Blog Specific Page (recipes)
 
@@ -35,7 +35,7 @@ When the image on this page is clicked, a modal will appear giving the user a bi
 
 #### Contact page
 
-There are be 4 textboxes on this page.
+There are four textboxes on this page.
 -	Name (When submit , the name has to be more than 5 characters long)
 -	Email address (When submit , the email must be a valid email address)
 -	Subject (When submit , the subject has to be more than 15 characters long)
@@ -45,7 +45,7 @@ JavaScript was used for validation. It will show an error message if the values 
 
 ## WordPress
 
-The WordPress was installed on my web host a add the blogs on the admin panel. The content for the website are stored on a WordPress installation used as a Headless CMS. WordPress is only used to provide an API and add content for the blog. 
+The WordPress was installed on my web host, and then I added the blogs on the admin panel. The content for the website is stored on a WordPress installation used as a Headless CMS. WordPress is only used to provide an API and to add content for the blog.
 
 The JavaScript code makes a call to the WordPress REST API to fetch the data (recipes).
 
